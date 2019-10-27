@@ -15,7 +15,7 @@ Register former pets ouwner who abandoned a pet and place them in a blacklist. T
 
 - backend-api -> will have the base api for the system to work
 - frontend -> will have the frontend application that will call the backend api
-- workder-services -> will have the background jobs that will manipulate, load and ingest data from both backend and frontend
+- worker-services -> will have the background jobs that will manipulate, load and ingest data from both backend and frontend
 - infrastructure-services -> will have application or script that will help manage infrastructure (TBD: not sure if it worth)
 
 ## Main Objectives

@@ -2,7 +2,7 @@
 
 Pet Management System
 
-## workder-services
+## worker-services
 
 - workder-services -> will have the background jobs that will manipulate, load and ingest data from both backend and frontend
 

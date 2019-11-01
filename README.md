@@ -29,7 +29,7 @@ Basic interactions of the system in a holistic view:
 frontend -> backend-api
 
 infrastructure-services -> backend-api
--> frontend
--> worker-services
+                        -> frontend
+                        -> worker-services
 
 worker-services -> backend-api

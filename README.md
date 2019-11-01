@@ -9,7 +9,7 @@ Main idea reduce the number of abandoned pets in the world (Simple as this :) )
 Create a system that allow someone to search for pets that need adoption.
 This system should also provide an easy access to a Veterinarians and Pet Hospitals Network, making it simple to share data between them.
 This system should also allow pets to be advertised for adoption and where they are and their conditions. Mainly make things simple enough to facilitate the adoption of abandoned pets.
-Register former pets ouwner who abandoned a pet and place them in a blacklist. This will prevent pets from being placed/adopted by owners who won't really care about them.
+Register former pets owner who abandoned a pet and place them in a blacklist. This will prevent pets from being placed/adopted by owners who won't really care about them.
 
 ## Repository structure
 
@@ -22,7 +22,6 @@ Register former pets ouwner who abandoned a pet and place them in a blacklist. T
 
 - All applications must be containerized, therefore the use of Docker is a must
 
-
 ## Simple Architecture that can evolve through time
 
 Basic interactions of the system in a holistic view:
@@ -30,8 +29,7 @@ Basic interactions of the system in a holistic view:
 frontend -> backend-api
 
 infrastructure-services -> backend-api
-                        -> frontend
-                        -> worker-services
+-> frontend
+-> worker-services
 
 worker-services -> backend-api
-

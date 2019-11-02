@@ -27,6 +27,7 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.json', name: 'json', version: '20190722'
     compile("org.springframework.boot:spring-boot-starter-web")
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.1.8.RELEASE'
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'

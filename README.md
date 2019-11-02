@@ -2,6 +2,8 @@
 
 Pet Management System
 
+[![CodeFactor](https://www.codefactor.io/repository/github/pedromsmoreira/pms/badge)](https://www.codefactor.io/repository/github/pedromsmoreira/pms)
+
 ## Project Idea
 
 Main idea reduce the number of abandoned pets in the world (Simple as this :) )

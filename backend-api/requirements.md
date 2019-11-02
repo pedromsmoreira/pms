@@ -20,4 +20,6 @@ Options:
 - [Neo4J](https://neo4j.com/)
 - [Dgraph](https://dgraph.io/)
 - [OrientDb](https://orientdb.com/)
-- more options...
+- [JanusGraph](https://janusgraph.org/)
+- [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
+- [Amazon Neptune](https://aws.amazon.com/neptune/)

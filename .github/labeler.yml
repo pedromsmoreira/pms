@@ -2,6 +2,6 @@ api:
   - backend-api/**/*.java
   - worker-service/**/*.java
 api-spec-review:
- - backend-api/api-specs/*
+ - backend-api/api-specs/*.yaml
 test:
   - backend-api/**/*tests.java

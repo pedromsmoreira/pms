@@ -3,7 +3,6 @@ name: Documentation request
 about: Suggest a documentation improvement
 title: Summary of this documentation request
 labels: documentation
-assignees: joao-r-reis, pedromsmoreira
 
 ---
 

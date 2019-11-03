@@ -13,9 +13,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Go To Project directory
-      run: cd backend-api
     - name: Grant right gradlew
-      run: chmod +x ./gradlew
+      run: chmod +x ./backend-api/gradlew
     - name: Build with Gradle
-      run: ./backend-api/gradlew build
+      run: ./backend-api/gradlew build    
+    - name: Run tests
+      run: ./backend-api/gradlew test

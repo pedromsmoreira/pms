@@ -18,8 +18,10 @@ jobs:
       with:
         arguments: build
         build-root-directory: backend-api
+        wrapper-directory: backend-api
     - name: Run tests
       uses: eskatos/gradle-command-action@v1
       with:
         arguments: test
         build-root-directory: backend-api
+        wrapper-directory: backend-api

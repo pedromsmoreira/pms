@@ -20,4 +20,5 @@ jobs:
         ./gradlew build
     - name: Run tests
       run: |
+        pushd backend-api
         ./gradlew test

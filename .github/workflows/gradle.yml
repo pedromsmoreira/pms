@@ -17,5 +17,3 @@ jobs:
       run: chmod +x ./backend-api/gradlew
     - name: Build with Gradle
       run: ./backend-api/gradlew build
-    - name: Run tests
-      run: ./backend-api/gradlew test

@@ -1,2 +1,3 @@
 feature: ['feature/*', 'feat/*']
 bug: ['bug/*', 'fix/*', 'bugfix/*', 'bug-fix/*']
+documentation: ['doc/*', 'docs/*', 'documentation/*']

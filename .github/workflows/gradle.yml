@@ -14,11 +14,12 @@ jobs:
       with:
         java-version: 11
     - name: Build
-      run: |
-        pushd backend-api
-        chmod +x ./gradlew
-        ./gradlew build
+      uses: eskatos/gradle-command-action@v1
+      with:
+        arguments: build
+        build-root-directory: backend-api
     - name: Run tests
-      run: |
-        pushd backend-api
-        ./gradlew test
+      uses: eskatos/gradle-command-action@v1
+      with:
+        arguments: test
+        build-root-directory: backend-api

@@ -17,6 +17,9 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.11
 
+bootJar {
+    mainClassName = 'pms.PetMgtSystemApplication'
+}
 
 configurations {
     compile.exclude module: "spring-boot-starter-tomcat"

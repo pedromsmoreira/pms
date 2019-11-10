@@ -6,7 +6,9 @@ cassandra:
   port: 9042
   keyspace: pet_mgt
 
-toggles:
-  - name: activate-cassandra-rw
-    active: false
-
+app:
+  toggles:
+    - name: activate-cassandra-rw
+      active: false
+    - name: activate-in-memory-rw
+      active: true

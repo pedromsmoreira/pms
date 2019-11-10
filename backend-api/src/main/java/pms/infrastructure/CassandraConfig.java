@@ -4,6 +4,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
 @Component
@@ -14,6 +16,8 @@ public class CassandraConfig {
     private String contactPoints;
     @NotEmpty
     private String keyspace;
+    @Min(1025)
+    @Max(65536)
     private Integer port;
 
     public String getContactPoints() {
@@ -38,5 +42,14 @@ public class CassandraConfig {
 
     public void setKeyspace(String keyspace) {
         this.keyspace = keyspace;
+    }
+
+    @Override
+    public String toString() {
+        return "CassandraConfig{" +
+                "contactPoints='" + contactPoints + '\'' +
+                ", keyspace='" + keyspace + '\'' +
+                ", port=" + port +
+                '}';
     }
 }

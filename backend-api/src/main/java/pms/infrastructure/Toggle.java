@@ -1,17 +1,30 @@
 package pms.infrastructure;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
-import org.springframework.validation.annotation.Validated;
-
-import javax.validation.constraints.NotEmpty;
-
-@Component
-@ConfigurationProperties
-@Validated
-class Toggle {
-    @NotEmpty
+public class Toggle {
     private String name;
-    @NotEmpty
     private Boolean active;
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Toggle{" +
+                "name='" + name + '\'' +
+                ", active=" + active +
+                '}';
+    }
 }

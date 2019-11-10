@@ -33,8 +33,6 @@ public class PetsController {
                                     pet.getAge(),
                                     pet.getBirthDate()))));
 
-            return ResponseEntity.ok()
-                .header("Custom-header", "foo")
-                .body(pets);
+        return ResponseEntity.ok().body(pets);
     }
 }

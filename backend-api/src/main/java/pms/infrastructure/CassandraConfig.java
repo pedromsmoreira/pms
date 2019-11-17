@@ -1,47 +1,31 @@
 package pms.infrastructure;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import com.typesafe.config.ConfigFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.validation.annotation.Validated;
-
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
 
 @Component
-@ConfigurationProperties("cassandra")
-@Validated
 public class CassandraConfig {
-    @NotEmpty
     private String contactPoints;
-    @NotEmpty
     private String keyspace;
-    @Min(1025)
-    @Max(65536)
     private Integer port;
+
+    public CassandraConfig(){
+        var cassandraCfg = ConfigFactory.load();
+        this.contactPoints = cassandraCfg.getString("cassandra.contactpoints");
+        this.port = cassandraCfg.getInt("cassandra.port");
+        this.keyspace = cassandraCfg.getString("cassandra.keyspace");
+    }
 
     public String getContactPoints() {
         return contactPoints;
-    }
-
-    public void setContactPoints(String contactPoints) {
-        this.contactPoints = contactPoints;
     }
 
     public Integer getPort() {
         return port;
     }
 
-    public void setPort(Integer port) {
-        this.port = port;
-    }
-
     public String getKeyspace() {
         return keyspace;
-    }
-
-    public void setKeyspace(String keyspace) {
-        this.keyspace = keyspace;
     }
 
     @Override

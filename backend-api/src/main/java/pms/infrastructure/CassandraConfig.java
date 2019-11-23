@@ -11,9 +11,9 @@ public class CassandraConfig {
 
     public CassandraConfig(){
         var cassandraCfg = ConfigFactory.load();
-        this.contactPoints = cassandraCfg.getString("cassandra.contactpoints");
-        this.port = cassandraCfg.getInt("cassandra.port");
-        this.keyspace = cassandraCfg.getString("cassandra.keyspace");
+        this.contactPoints = cassandraCfg.getString(ConfigPathConstants.Cassandra.CONTACT_POINTS);
+        this.port = cassandraCfg.getInt(ConfigPathConstants.Cassandra.PORT);
+        this.keyspace = cassandraCfg.getString(ConfigPathConstants.Cassandra.KEYSPACE);
     }
 
     public String getContactPoints() {
@@ -37,3 +37,4 @@ public class CassandraConfig {
                 '}';
     }
 }
+

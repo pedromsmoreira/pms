@@ -12,7 +12,6 @@ public enum Gender {
         this.genderCode = code;
     }
 
-
     public String getGenderCode() {
         return genderCode;
     }

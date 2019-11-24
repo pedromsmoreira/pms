@@ -14,5 +14,4 @@ public class PetMgtSystemApplication {
         LOGGER.info("Starting application...");
         SpringApplication.run(PetMgtSystemApplication.class, args);
     }
-
 }

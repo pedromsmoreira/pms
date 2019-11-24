@@ -1,4 +1,4 @@
-package pms.pets.api;
+package pms.pets.dto;
 
 public class Pet {
     private String name;
@@ -6,15 +6,15 @@ public class Pet {
     private String race;
     private String gender;
     private Integer age;
-    private String birthdate;
+    private String birthDate;
 
-    public Pet(String name, String id, String race, String gender, Integer age, String birthdate) {
+    public Pet(String name, String id, String race, String gender, Integer age, String birthDate) {
         this.name = name;
         this.id = id;
         this.race = race;
         this.gender = gender;
         this.age = age;
-        this.birthdate = birthdate;
+        this.birthDate = birthDate;
     }
 
     public String getName() {
@@ -57,11 +57,11 @@ public class Pet {
         this.age = age;
     }
 
-    public String getBirthdate() {
-        return birthdate;
+    public String getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirthdate(String birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
     }
 }

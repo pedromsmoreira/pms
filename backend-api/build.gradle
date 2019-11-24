@@ -31,6 +31,7 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.1.8.RELEASE'
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+    compile group: 'com.typesafe', name: 'config', version: '1.4.0'
     testCompile "junit:junit:4.11"
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }

@@ -21,7 +21,7 @@ public class SwaggerConfig {
     public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("pms.api"))
+                .apis(RequestHandlerSelectors.basePackage("pms"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
